@@ -6,10 +6,10 @@
   "version": "0.1.0",
   "scripts": {
     "start": "nodemon ./server.js --exec babel-node --presets env",
-    "update:schema": "babel-node ./scripts/update-schema.js"
+    "update:schema": "babel-node ./scripts/update-schema.js",
+    "seed:database": "babel-node ./scripts/seed-database.js"
   },
   "dependencies": {
-    "@sketchpixy/rubix": "^2.0.0",
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
     "babel-polyfill": "^6.13.0",

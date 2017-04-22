@@ -23,6 +23,11 @@ class Home extends React.Component {
     )
   }
 
+  reloadData() {
+    console.log(this)
+    this.props.relay.forceFetch()
+  }
+
   render() {
     return (
       <div>
@@ -35,6 +40,7 @@ class Home extends React.Component {
           }
         </ul>
         <button onClick={this.login}>Send Mutation</button>
+        <button onClick={this.reloadData.bind(this)}>Reload</button>
       </div>
     )
   }
